@@ -204,6 +204,7 @@ def main():
 
     if trigger_restart:
         logging.warning(f"Problem detected for port {CHECK_PORT}. Initiating router restart.")
+        exit()
         create_overlap_lock() # Prevent overlap during restart attempt
         record_restart_attempt() # Record *before* attempting restart for cooldown
 
