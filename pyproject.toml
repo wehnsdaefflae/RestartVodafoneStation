@@ -6,3 +6,11 @@ requires-python = ">=3.10"
 dependencies = [
     "playwright>=1.52.0",
 ]
+
+# For single file modules
+[tool.setuptools]
+py-modules = ["conditional_restart", "restart_router"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
